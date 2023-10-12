@@ -1,19 +1,19 @@
-.navbar li{
+.navbar li {
     float: left;
     overflow: auto;
     padding: 4px 16px;
     list-style: none;
 }
 
-.navbar ul{
+.navbar ul {
     overflow: auto;
 }
 
-.navbar{
-    background-color:coral;
-    margin: 4px 2px;   
+.navbar {
+    background-color: coral;
+    margin: 4px 2px;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     color: yellow;
 }
