@@ -1,8 +1,15 @@
+body{
+    background-color: rgba(188, 84, 166, 0.242);
+}
+.heading h1{
+    background-color: rgb(151,99,255);
+    text-align: center;
+}
 .navbar li {
     float: left;
     overflow: auto;
     padding: 4px 16px;
-    list-style: none;
+    list-style: none;   
 }
 
 .navbar ul {
@@ -16,4 +23,40 @@
 
 .navbar li a:hover {
     color: yellow;
+}
+
+.navbar li a{
+    color:rgb(56, 42, 112)
+}
+
+.intro{
+    background-color: blanchedalmond;
+}
+
+#foot{
+    text-align: center;
+    background-color:darkgray
+}
+
+.navbar form{
+    float: right;
+}
+
+.latest{
+    background-color:burlywood
+}
+
+.latest p,ol{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.latest img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+    width: 350px;
+    height: 200px;
 }
