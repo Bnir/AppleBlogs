@@ -1,15 +1,19 @@
-body{
+/* index (HOME) css */
+
+body {
     background-color: rgba(188, 84, 166, 0.242);
 }
-.heading h1{
-    background-color: rgb(151,99,255);
+
+.heading h1 {
+    background-color: rgb(151, 99, 255);
     text-align: center;
 }
+
 .navbar li {
     float: left;
     overflow: auto;
     padding: 4px 16px;
-    list-style: none;   
+    list-style: none;
 }
 
 .navbar ul {
@@ -25,34 +29,35 @@ body{
     color: yellow;
 }
 
-.navbar li a{
-    color:rgb(56, 42, 112)
+.navbar li a {
+    color: rgb(56, 42, 112)
 }
 
-.intro{
+.intro {
     background-color: blanchedalmond;
 }
 
-#foot{
+#foot {
     text-align: center;
-    background-color:darkgray
+    background-color: darkgray
 }
 
-.navbar form{
+.navbar form {
     float: right;
+    padding: 2px 4px;
 }
 
-.latest{
-    background-color:burlywood
+.latest {
+    background-color: burlywood
 }
 
-.latest p,ol{
+.latest p,
+ol {
     font-size: 18px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.latest img{
+.latest img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -60,3 +65,33 @@ body{
     width: 350px;
     height: 200px;
 }
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightsalmon;
+    color: rgb(212, 255, 55);
+}
+
+.headsearch input[type="text"] {
+    color: blue;
+    font-weight: bold;
+}
+
+.headsearch {
+    overflow: auto;
+}
+
+/* Contact form css  */
+
+.contact{
+    width:200px;
+    box-align: center;
+}
+
+button:active{
+    background-color: brown;
+}
+
