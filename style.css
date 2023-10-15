@@ -7,6 +7,15 @@ body {
 .heading h1 {
     background-color: rgb(151, 99, 255);
     text-align: center;
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 36px;
+    padding: 10px;
+}
+
+.heading h1 img{
+    height:30px;
+    margin-top: 4px;
 }
 
 .navbar li {
@@ -18,6 +27,8 @@ body {
 
 .navbar ul {
     overflow: auto;
+    margin-top: 0px;
+    padding: 4px;
 }
 
 .navbar {
@@ -84,12 +95,16 @@ button:hover {
     overflow: auto;
 }
 
+.latest p::selection{
+    background-color: greenyellow;
+}
+
 /* Contact form css  */
 
 
 
-.contact{
-    width:600px;
+.contact {
+    width: 600px;
     height: 400px;
     box-align: center;
     border: 2px solid lightseagreen;
@@ -97,18 +112,22 @@ button:hover {
     padding: 200px 400px;
 }
 
-.contact input,textarea{
+.contact input,
+textarea {
     margin-right: 50%;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 
-button{
+.contact button {
     margin-left: 50%;
     padding: 4px 10px;
 }
-button:active{
+
+button:active {
     background-color: brown;
 }
 
-
+.contacthead h1{
+    width: 210%;
+}
