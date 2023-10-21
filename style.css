@@ -24,10 +24,11 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-wrap: nowrap;
-    height: 70px;
+    height: 60px;
     background-color: rgb(0, 0, 0);
     margin-bottom: 0px;
     padding: 0px;
+    font-size: larger;
 }
 
 
@@ -46,14 +47,15 @@ body {
 }
 
 .navbar input {
-    width: 200px;
-    height: 20px;
+    width: 250px;
+    height: 28px;
     border-radius: 2px;
     font-weight: 700;
+
 }
 
 .navbar button {
-    height: 24px;
+    height: 30px;
     width: 130px;
     border: 2px solid grey;
     border-radius: 4px;
@@ -89,7 +91,7 @@ body {
 /*set opacity of background image in class intro but not affect the opacity of p and h1*/
 
 .intro::before {
-    content: ""; 
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -99,19 +101,53 @@ body {
     height: 100%;
 }
 
-.intro h1{
+.intro h1 {
     color: white;
     text-align: center;
     position: relative;
 }
-.intro p{
+
+.intro p {
     position: relative;
     color: white;
     text-align: center;
+}
+
+.latest h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: red;
+    background-color: rgb(113, 250, 204);
+
+}
+
+#foot {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    border-top: 1px grey solid;
+    background-color: rgb(108, 34, 34);
 }
 
 /* Contact form css  */
 
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    border: 2px solid ghostwhite;
+    border-radius: 4px;
+    height: 400px;
+    width: 50%;
+    text-align: center;
+}
+
+.column:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
 
 
 .contact {
