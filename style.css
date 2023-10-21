@@ -48,9 +48,10 @@ body {
     background-color: blanchedalmond;
 }
 
-#foot {
+#foot span {
+    display: block;
     text-align: center;
-    background-color: darkgray
+    background-color: darkgray;
 }
 
 .navbar form {
@@ -59,7 +60,7 @@ body {
 }
 
 .latest {
-    background-color: burlywood
+    background-color: burlywood;
 }
 
 .latest p,
@@ -99,6 +100,27 @@ button:hover {
     background-color: greenyellow;
 }
 
+#foot div{
+    background-color: #ccd5ae;
+    height: 100px;
+    border: 2px solid red;
+    font-size:14px;
+    font-family: Young Serif;
+}
+
+#foot ul{
+    list-style: none;
+    margin-left: 30px;
+}
+#foot div a{
+    text-decoration: none;
+    color:dimgray
+}
+
+#foot div a:hover{
+    text-decoration: underline;
+}
+
 /* Contact form css  */
 
 
@@ -129,5 +151,5 @@ button:active {
 }
 
 .contacthead h1{
-    width: 210%;
+    display: block;
 }
