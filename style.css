@@ -41,7 +41,7 @@ body {
     text-decoration-line: none;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: orange;
     font-weight: 700;
 }
@@ -171,12 +171,12 @@ body {
 .column:hover {
     opacity: 1;
     cursor: pointer;
-    scale: 1.1;
+    scale: 1.02;
     border: none;
 }
 
 .column img:hover {
-    scale: 1.1;
+    scale: 1.14;
 }
 
 @media (width<=750px) {
