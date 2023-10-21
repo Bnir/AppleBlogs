@@ -1,124 +1,113 @@
 /* index (HOME) css */
 
 body {
-    background-color: rgba(188, 84, 166, 0.242);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
-.heading h1 {
-    background-color: rgb(151, 99, 255);
+.heading {
     text-align: center;
-    margin-top: 2px;
-    margin-bottom: 0;
-    font-size: 36px;
-    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Rowdies', sans-serif;
+    font-size: 30px;
+    margin-bottom: 0px;
+
 }
 
-.heading h1 img{
-    height:30px;
-    margin-top: 4px;
-}
-
-.navbar li {
-    float: left;
-    overflow: auto;
-    padding: 4px 16px;
-    list-style: none;
-}
-
-.navbar ul {
-    overflow: auto;
-    margin-top: 0px;
-    padding: 4px;
+.heading img {
+    height: 1em;
+    margin-top: 3px;
 }
 
 .navbar {
-    background-color: coral;
-    margin: 4px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
-.navbar li a:hover {
-    color: yellow;
-}
 
-.navbar li a {
-    color: rgb(56, 42, 112)
-}
-
-.intro {
-    background-color: blanchedalmond;
-}
-
-#foot span {
-    display: block;
-    text-align: center;
-    background-color: darkgray;
+.navbar a {
+    float: left;
+    margin-top: 0px;
+    display: flex;
+    margin-right: 40px;
+    color: wheat;
+    font-weight: 500;
+    text-decoration-line: none;
 }
 
 .navbar form {
     float: right;
-    padding: 2px 4px;
 }
 
-.latest {
-    background-color: burlywood;
+.navbar input {
+    width: 200px;
+    height: 20px;
+    border-radius: 2px;
+    font-weight: 700;
 }
 
-.latest p,
-ol {
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+.navbar button {
+    height: 24px;
+    width: 130px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: rgb(185, 128, 255);
 }
 
-.latest img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    display: block;
-    width: 350px;
-    height: 200px;
-}
-
-button {
+.navbar button:hover {
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: lightsalmon;
-    color: rgb(212, 255, 55);
+.intro h1 {
+    font-size: 50px;
+    color: grey;
+    text-align: center;
 }
 
-.headsearch input[type="text"] {
-    color: blue;
-    font-weight: bold;
+.intro p {
+    font-size: x-large;
 }
 
-.headsearch {
-    overflow: auto;
+.intro {
+    position: relative;
+    background-image: url("parall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-.latest p::selection{
-    background-color: greenyellow;
+/*set opacity of background image in class intro but not affect the opacity of p and h1*/
+
+.intro::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
 }
 
-#foot div{
-    background-color: #ccd5ae;
-    height: 100px;
-    border: 2px solid red;
-    font-size:14px;
-    font-family: Young Serif;
+.intro h1{
+    color: white;
+    text-align: center;
+    position: relative;
 }
-
-#foot ul{
-    list-style: none;
-    margin-left: 30px;
-}
-#foot div a{
-    text-decoration: none;
-    color:dimgray
-}
-
-#foot div a:hover{
-    text-decoration: underline;
+.intro p{
+    position: relative;
+    color: white;
+    text-align: center;
 }
 
 /* Contact form css  */
@@ -150,6 +139,6 @@ button:active {
     background-color: brown;
 }
 
-.contacthead h1{
+.contacthead h1 {
     display: block;
 }
