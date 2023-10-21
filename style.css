@@ -41,6 +41,11 @@ body {
     text-decoration-line: none;
 }
 
+.navbar a:hover{
+    color: orange;
+    font-weight: 700;
+}
+
 .navbar form {
     float: right;
 }
@@ -155,12 +160,12 @@ body {
     height: 400px;
     width: 50%;
     text-align: center;
-    transition: 0.4s;
+    transition: 0.5s;
     opacity: 0.6;
 }
 
-.column img{
-    transition: 0.4s;
+.column img {
+    transition: 0.5s;
 }
 
 .column:hover {
@@ -170,7 +175,7 @@ body {
     border: none;
 }
 
-.column img:hover{
+.column img:hover {
     scale: 1.1;
 }
 
@@ -186,12 +191,13 @@ body {
     .navbar {
         flex-wrap: wrap;
     }
-    .column:hover{
+
+    .column:hover {
         scale: 1;
         border: 2px solid ghostwhite;
     }
 
-    .column img:hover{
+    .column img:hover {
         scale: 1;
     }
 }
