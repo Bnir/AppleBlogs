@@ -34,7 +34,6 @@ body {
 .navbar a {
     float: left;
     margin-top: 0px;
-    display: flex;
     margin-right: 40px;
     color: wheat;
     font-weight: 500;
@@ -179,12 +178,25 @@ body {
 
 .column img:hover {
     scale: 1.14;
+    
 }
 
-@media (width<=500px){
+@media (width <=341px){
+    .navbar{
+        flex-direction: column;
+        height: 260px;
+    }
+ 
+    .navbar .headsearch input{
+        width: 120px;
+    }
+   
+}
+@media (341px<width<=500px){
     .navbar .headsearch input{
         width: 180px;
     }
+
 }
 @media (width<=750px) {
     .row {
