@@ -10,45 +10,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="heading">
-        <h1>World Of Apple <img class="apple" src="applelogo.png" alt=""> </h1>
+        <h1>World Of Apple <img class="apple" src="images/applelogo.png" alt=""> </h1>
     </div>
+    <hr>
 
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.php">Contact Us</a></li>
-            <form class="headsearch" action="https://www.amazon.in/s">
-                <input type="text" name="k" id="search" placeholder="Search">
-                <button type="submit">Search Amazon</button>
-            </form>
-        </ul>
+        <a href="index.html">Home</a></li>
+        <a href="products.html">Products</a></li>
+        <a href="https://blogstech.000webhostapp.com/contact.php">Contact Us</a></li>
 
-
+        <form class="headsearch" action="https://www.amazon.in/s">
+        <input type="text" name="k" id="search" placeholder="Search">
+            <button type="submit">Search Amazon</button>
+        </form>
     </nav>
+    <hr>
 
-    <marquee behavior="scrolling" direction="right" style="background-color: orangered; margin-bottom: 0px;"><B>WEBSITE
-            UNDER DEVELOPMENT, CONTACT US PAGE MIGHT NOT WORK</B></marquee>
+    <!-- <marquee behavior="scrolling" direction="right" style="background-color: orangered; margin-bottom: 0px;"><B>WEBSITE
+            UNDER DEVELOPMENT, CONTACT US PAGE MIGHT NOT WORK</B></marquee> -->
     <section class="intro" style="font-size: 18px;">
-        <h2 style="font-weight: bold;">Introduction:</h2>
-        <p>Are you a die-hard Apple enthusiast, eager to stay in the loop about the latest Apple product releases,
-            discover helpful tips and tricks, and read in-depth reviews that help you make informed decisions? Look no
-            further!
-        </p>
-        <p>From the highly anticipated iPhone launches to the latest MacBook innovations, we've got the inside scoop.
-            Our
-            team of Apple enthusiasts is here to provide you with detailed insights, specs, and features of every new
-            Apple
-            product, ensuring you're the first to know about the next big thing.</p>
+        <h1 style="font-weight: bold;">Introduction</h1>
+        <div class="intropara">
+            <p>Welcome to the "World of Apple," your premier destination for everything Apple. We invite you to embark
+                on a journey through a world where innovation, style, and technology converge to redefine excellence.
+            </p>
+            <p>
+                At the "World of Apple," we are dedicated to curating the latest news, in-depth reviews, and insightful
+                how-to guides to keep you informed and inspired. Whether you're a seasoned Apple enthusiast or a
+                newcomer to the Apple ecosystem, our content is thoughtfully crafted to enhance your experience.
+            </p>
+            <p>We take pride in providing trustworthy insights and unbiased reviews, ensuring that you can make
+                informed decisions about the ever-evolving world of Apple products. But we are more than just a website;
+                we are a vibrant community of Apple aficionados who share your passion. Connect, engage, and explore
+                with like-minded individuals who are as passionate about Apple as you are.</p>
+
+        </div>
+
     </section>
 
     <section class="latest">
-        <h1><u>Latest Products:</u></h1>
-        <h2>1) Iphone 15</h2>
+        <h1><u>Latest Posts:</u></h1>
+        <!-- <h2>1) Iphone 15</h2>
         <img src="OIP.jpeg">
         <p>The iPhone 15, Apple's latest innovation in the world of smartphones, redefines excellence in design,
             performance, and user experience. This powerful device embodies the perfect blend of cutting-edge technology
@@ -65,11 +74,37 @@
             <li><b>Pro-Level Camera Systerm:</b> Capture professional-grade photos and videos with the innovative camera
                 system. The iPhone 15 boasts advanced imaging capabilities, low-light performance, and a range of
                 creative shooting modes.</li>
-        </ol>
+        </ol> -->
+        <div class="row">
+            <div class="column">
+                <h2 style="text-align: center;"><br></h2>
+                <a href="Products/Iphone-15-ultra.html"><img src="images/iphone-15-price.jpg" width="300px"></a>
+
+            </div>
+            <div class="column">
+                <h2 style="text-align: center;"><br></h2>
+                <a href="Products/Iphone-15-pro.html"><img
+                        src="https://images.macrumors.com/article-new/2023/07/iPhone-15-Pro-Two-Volume-Buttons-and-Titanium-Feature-Blue-Green.jpg"
+                        height="200px" width="300px"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2 style="text-align: center;"><br></h2>
+                <a href="Products/Iphone-14-pro.html"><img src="images/iPhone-14-vs-iPhone-14-Pro-Feature.jpg"
+                        height="250px" width="250px"></a>
+            </div>
+            <div class="column">
+                <h2 style="text-align: center;"><br></h2>
+                <a href="Products/Iphone-14.html"><img
+                        src="https://images.macrumors.com/t/N7jcmsIhvIDCUT4rWDOXOO3mtc4=/2589x/article-new/2021/09/iPhone-14-Mock-Roundup-2.5.jpg"
+                        height="240px" width="320px"></a>
+            </div>
+        </div>
     </section>
 
     <footer id="foot">
-        <div>
+        <!-- <div>
             <nav>
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
@@ -77,7 +112,7 @@
                     <li><a href="contact.html">Contact us</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
         <span class="copy">2023 World Of Apple &copy;</span>
     </footer>
 
