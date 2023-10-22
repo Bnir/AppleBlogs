@@ -175,10 +175,17 @@ body {
     border: none;
 }
 
+
+
 .column img:hover {
     scale: 1.14;
 }
 
+@media (width<=500px){
+    .navbar .headsearch input{
+        width: 180px;
+    }
+}
 @media (width<=750px) {
     .row {
         flex-direction: column;
