@@ -178,26 +178,29 @@ body {
 
 .column img:hover {
     scale: 1.14;
-    
+
 }
 
-@media (width <=341px){
-    .navbar{
+@media (width <=341px) {
+    .navbar {
         flex-direction: column;
         height: 260px;
     }
- 
-    .navbar .headsearch input{
+
+    .navbar .headsearch input {
         width: 120px;
     }
-   
+
+
 }
-@media (341px<width<=500px){
-    .navbar .headsearch input{
+
+@media (341px<width<=500px) {
+    .navbar .headsearch input {
         width: 180px;
     }
 
 }
+
 @media (width<=750px) {
     .row {
         flex-direction: column;
@@ -223,7 +226,7 @@ body {
 
 /* Contact form css  */
 
-.contact {
+/* .contact {
     width: 600px;
     height: 400px;
     box-align: center;
@@ -250,4 +253,22 @@ button:active {
 
 .contacthead h1 {
     display: block;
+} */
+
+.container {
+    scale: 0.8;
+}
+
+.container input, textarea {
+    font-size: 24px;
+}
+
+.btn {
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: rgb(202, 75, 24);
+    font-weight: 700;
+    border-radius: 10px;
 }
