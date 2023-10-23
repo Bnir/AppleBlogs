@@ -27,9 +27,10 @@ require_once("Other files/Fetch-db.php");
     <hr>
 
     <nav class="navbar">
-        <a href="index.html">Home</a></li>
-        <a href="products.html">Products</a></li>
-        <a href="https://blogstech.000webhostapp.com/contact.php">Contact Us</a></li>
+        <a href="index.html">Home</a>
+        <a href="https://blogstech.000webhostapp.com/contact.php">Contact Us</a>
+        <a style="color:chartreuse;" href="https://blogstech.000webhostapp.com/admin-login.php">Admin Login</a>
+
 
         <form class="headsearch" action="https://www.amazon.in/s">
             <input type="text" name="k" id="search" placeholder="Search">

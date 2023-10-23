@@ -1,5 +1,5 @@
 <?php
-$submit=false;
+$submit = false;
 if (isset($_POST['fname'])) {
     $server = "localhost";
     $username = "id21434822_admin";
@@ -24,7 +24,7 @@ if (isset($_POST['fname'])) {
 
     if ($conn->query($sql) == true) {
         //echo "Submitted Successfully";
-        $submit=true;
+        $submit = true;
     } else {
         echo "ERROR: $sql <br> $conn->error";
     }
@@ -48,17 +48,17 @@ if (isset($_POST['fname'])) {
 <!--        <h1 style="text-align: center; background-color: rgb(154, 164, 228);"><u>Contact US</u></h1>-->
 <!--        <center>-->
 <!--            <form class="contact" action="" method="POST">-->
-                <!-- <label for="name">Your Name</label> -->
+<!-- <label for="name">Your Name</label> -->
 <!--                <input type="text" name="name" id="name" placeholder="Name" required>-->
-                <!-- <label for="email">Email ID</label> -->
+<!-- <label for="email">Email ID</label> -->
 <!--                <input type="email" name="email" id="email" placeholder="Email ID">-->
 <!--                <br>-->
 
-                <!-- <label for="subject">Subject:</label> -->
+<!-- <label for="subject">Subject:</label> -->
 <!--                <input type="text" name="sub" id="subject" placeholder="Subject">-->
 <!--                <br>-->
 
-                <!-- <label for="desp">Description</label> -->
+<!-- <label for="desp">Description</label> -->
 <!--                <textarea name="desc" id="desp" cols="30" rows="10" placeholder="Description"></textarea>-->
 
 <!--                <button type="submit">SUBMIT</button>-->
@@ -95,9 +95,9 @@ if (isset($_POST['fname'])) {
     </div>
     <hr>
     <nav class="navbar" style="font-size: 19.2px; font-family: 'Times New Roman', Times, serif;">
-        <a href="http://appleblogs.me/appleblogs">Home</a></li>
-        <a href="http://appleblogs.me/appleblogs">Products</a></li>
-        <a href="contact.php">Contact Us</a></li>
+        <a href="http://appleblogs.me/appleblogs">Home</a>
+        <a href="contact.php">Contact Us</a>
+        <a style="color:chartreuse;" href="https://blogstech.000webhostapp.com/admin-login.php">Admin Login</a>
         <form style="font-size: 16px;" class="headsearch" action="https://www.amazon.in/s">
             <input type="text" name="k" id="search" placeholder="Search">
             <button style="height: 28px;" type="submit">Search Amazon</button>
