@@ -42,7 +42,7 @@ if (isset($_POST['username'])) {
     <hr>
 
     <nav class="navbar">
-        <a href="index.html">Home</a>
+        <a href="http://appleblogs.me/appleblogs">Home</a>
         <a href="https://blogstech.000webhostapp.com/contact.php">Contact Us</a>
         <a style="color:chartreuse;" href="https://blogstech.000webhostapp.com/admin-login.php">Admin Login</a>
 

@@ -96,7 +96,7 @@ if (isset($_POST['fname'])) {
     <hr>
     <nav class="navbar" style="font-size: 19.2px; font-family: 'Times New Roman', Times, serif;">
         <a href="http://appleblogs.me/appleblogs">Home</a>
-        <a href="contact.php">Contact Us</a>
+        <a href="https://blogstech.000webhostapp.com/contact.php">Contact Us</a>
         <a style="color:chartreuse;" href="https://blogstech.000webhostapp.com/admin-login.php">Admin Login</a>
         <form style="font-size: 16px;" class="headsearch" action="https://www.amazon.in/s">
             <input type="text" name="k" id="search" placeholder="Search">
