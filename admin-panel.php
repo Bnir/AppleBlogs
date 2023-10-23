@@ -22,8 +22,7 @@ require_once("Other files/Fetch-db.php");
 
 <body>
     <div class="heading">
-        <h1 style="font-size: 56px;">World Of Apple <img class="apple" src="images/applelogo.png"
-                style="margin-bottom:12px;" alt=""> </h1>
+        <h1 style="font-size: 56px;">World Of Apple <img class="apple" src="images/applelogo.png" style="margin-bottom:12px;" alt=""> </h1>
     </div>
     <hr>
 
@@ -42,11 +41,11 @@ require_once("Other files/Fetch-db.php");
     <!-- <marquee behavior="scrolling" direction="right" style="background-color: orangered; margin-bottom: 0px;"><B>WEBSITE
             UNDER DEVELOPMENT, CONTACT US PAGE MIGHT NOT WORK</B></marquee> -->
 
-    <div class="container-fluid" style="margin:14px 10px;">
-        <h1 style="background-color:#162235; border-radius:8px" class="text-center">Database</h1>
+    <div class="container-fluid" style="margin-bottom:80px; scale:0.95;">
+            <h1 style="background-color:#162235; border-radius:8px" class="text-center">Database</h1>
 
         <table class="table table-striped text-center" style="background-color: aliceblue; border-radius:8px">
-            <thead>
+                <thead>
                 <tr>
                     <th>Serial No</th>
                     <th>First Name</th>

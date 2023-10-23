@@ -140,12 +140,18 @@ body {
 }
 
 #foot {
-    text-align: center;
     font-weight: 600;
     font-size: 20px;
     border-top: 1px grey solid;
     background-color: rgb(108, 34, 34);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
+
 
 
 .row {
@@ -259,7 +265,8 @@ button:active {
     scale: 0.8;
 }
 
-.container input, textarea {
+.container input,
+textarea {
     font-size: 24px;
 }
 
