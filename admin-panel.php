@@ -3,17 +3,17 @@ require_once("Other files/Fetch-db.php");
 ob_start();
 require('admin-login.php');
 ob_end_clean();
-if (!isset($_SESSION['user'])){
+if (!isset($_SESSION['user'])) {
     header('Location: //blogstech.000webhostapp.com/admin-login.php');
     // echo '<script>window.location.href = "http://blogstech.000webhostapp.com/admin-login.php";</script>';
     exit;
 }
-if (isset($_POST['logout'])){
+if (isset($_POST['logout'])) {
     session_destroy();
     header('Location: //blogstech.000webhostapp.com/admin-login.php');
     exit;
 }
-        
+
 ?>
 
 <!DOCTYPE html>
@@ -36,14 +36,16 @@ if (isset($_POST['logout'])){
 
 <body>
     <div class="heading">
-        <h1 style="font-size: 56px;">World Of Apple <img class="apple" src="https://cdn.freebiesupply.com/logos/large/2x/apple-logo-png-transparent.png" style="margin-bottom:12px;" alt=""> </h1>
+        <h1 style="font-size: 56px;">World Of Apple <img class="apple"
+                src="https://cdn.freebiesupply.com/logos/large/2x/apple-logo-png-transparent.png"
+                style="margin-bottom:12px;" alt=""> </h1>
     </div>
-            <p class="text-center" style="font-weight:700; color:red; font-siz">(ADMIN PANEL)</p>
+    <p class="text-center" style="font-weight:700; color:red; font-siz">(ADMIN PANEL)</p>
 
     <hr>
 
     <nav class="navbar">
-        <a href="http://appleblogs.me/appleblogs">Home</a>
+        <a href="https://appleblogs.tech">Home</a>
         <a href="https://blogstech.000webhostapp.com/contact.php">Contact Us</a>
         <a style="color:chartreuse;" href="https://blogstech.000webhostapp.com/admin-login.php">Admin Login</a>
 
@@ -53,7 +55,8 @@ if (isset($_POST['logout'])){
         <!--    <button type="submit">Search Amazon</button>-->
         <!--</form>-->
         <form method="post">
-            <button style="padding-bottom:30px; background-color:red" class='btn btn-danger' name="logout">Log Out</button>
+            <button style="padding-bottom:30px; background-color:red" class='btn btn-danger' name="logout">Log
+                Out</button>
         </form>
     </nav>
     <hr>
@@ -62,10 +65,10 @@ if (isset($_POST['logout'])){
             UNDER DEVELOPMENT, CONTACT US PAGE MIGHT NOT WORK</B></marquee> -->
 
     <div class="container-fluid" style="margin-bottom:80px; scale:0.95;">
-            <h1 style="background-color:#162235; border-radius:8px" class="text-center">Database</h1>
+        <h1 style="background-color:#162235; border-radius:8px" class="text-center">Database</h1>
 
         <table class="table table-striped text-center" style="background-color: aliceblue; border-radius:8px">
-                <thead>
+            <thead>
                 <tr>
                     <th>Serial No</th>
                     <th>First Name</th>
@@ -107,7 +110,7 @@ if (isset($_POST['logout'])){
             }
             ?>
         </table>
-        
+
     </div>
     <footer id="foot" style="margin-top:40px;">
         <!-- <div>

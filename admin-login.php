@@ -1,5 +1,5 @@
 <?php
-ini_set('session.gc_maxlifetime', 10); 
+ini_set('session.gc_maxlifetime', 10);
 
 session_start();
 
@@ -39,12 +39,13 @@ if (isset($_POST['username'])) {
 
 <body>
     <div class="heading">
-        <h1 style="font-size: 60px;">World Of Apple <img class="apple" style="margin: 0 0 18px 0;" src="https://cdn.freebiesupply.com/logos/large/2x/apple-logo-png-transparent.png" alt=""> </h1>
+        <h1 style="font-size: 60px;">World Of Apple <img class="apple" style="margin: 0 0 18px 0;"
+                src="https://cdn.freebiesupply.com/logos/large/2x/apple-logo-png-transparent.png" alt=""> </h1>
     </div>
     <hr>
 
     <nav class="navbar">
-        <a href="http://appleblogs.me/appleblogs">Home</a>
+        <a href="https://appleblogs.tech">Home</a>
         <a href="https://blogstech.000webhostapp.com/contact.php">Contact Us</a>
         <a style="color:chartreuse;" href="https://blogstech.000webhostapp.com/admin-login.php">Admin Login</a>
 
