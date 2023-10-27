@@ -1,5 +1,19 @@
 <?php
 require_once("Other files/Fetch-db.php");
+ob_start();
+require('admin-login.php');
+ob_end_clean();
+if (!isset($_SESSION['user'])){
+    header('Location: //blogstech.000webhostapp.com/admin-login.php');
+    // echo '<script>window.location.href = "http://blogstech.000webhostapp.com/admin-login.php";</script>';
+    exit;
+}
+if (isset($_POST['logout'])){
+    session_destroy();
+    header('Location: //blogstech.000webhostapp.com/admin-login.php');
+    exit;
+}
+        
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +36,10 @@ require_once("Other files/Fetch-db.php");
 
 <body>
     <div class="heading">
-        <h1 style="font-size: 56px;">World Of Apple <img class="apple" src="images/applelogo.png" style="margin-bottom:12px;" alt=""> </h1>
+        <h1 style="font-size: 56px;">World Of Apple <img class="apple" src="https://cdn.freebiesupply.com/logos/large/2x/apple-logo-png-transparent.png" style="margin-bottom:12px;" alt=""> </h1>
     </div>
+            <p class="text-center" style="font-weight:700; color:red; font-siz">(ADMIN PANEL)</p>
+
     <hr>
 
     <nav class="navbar">
@@ -32,9 +48,12 @@ require_once("Other files/Fetch-db.php");
         <a style="color:chartreuse;" href="https://blogstech.000webhostapp.com/admin-login.php">Admin Login</a>
 
 
-        <form class="headsearch" action="https://www.amazon.in/s">
-            <input type="text" name="k" id="search" placeholder="Search">
-            <button type="submit">Search Amazon</button>
+        <!--<form class="headsearch" action="https://www.amazon.in/s">-->
+        <!--    <input type="text" name="k" id="search" placeholder="Search">-->
+        <!--    <button type="submit">Search Amazon</button>-->
+        <!--</form>-->
+        <form method="post">
+            <button style="padding-bottom:30px; background-color:red" class='btn btn-danger' name="logout">Log Out</button>
         </form>
     </nav>
     <hr>
@@ -88,6 +107,7 @@ require_once("Other files/Fetch-db.php");
             }
             ?>
         </table>
+        
     </div>
     <footer id="foot" style="margin-top:40px;">
         <!-- <div>

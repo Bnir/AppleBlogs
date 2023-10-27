@@ -1,23 +1,25 @@
 <?php
+ini_set('session.gc_maxlifetime', 10); 
+
+session_start();
+
 $submit = false;
 $fail = false;
 if (isset($_POST['username'])) {
     $username = $_POST['username'];
     $password = $_POST['pass'];
 
-    if (($username == 'admin') && ($password == 'KING')) {
-        // echo 'success';
-        header('Location: //blogstech.000webhostapp.com/adm-03-pan-el-04-29-30-01-02020290-04-05-06---0003.php');
+    if (($username == 'admina') && ($password == 'KING')) {
+        $_SESSION['user'] = $_POST['username'];
+        // echo '<script>window.location.href = "https://blogstech.000webhostapp.com/admin-panel.php";</script>';
+        header('Location://blogstech.000webhostapp.com/admin-panel.php');
         $submit = true;
     } else {
-        // echo 'WRONG DETAILS ENTERED';
         $fail = true;
     }
 }
-
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,7 +39,7 @@ if (isset($_POST['username'])) {
 
 <body>
     <div class="heading">
-        <h1 style="font-size: 60px;">World Of Apple <img class="apple" style="margin: 0 0 18px 0;" src="" alt=""> </h1>
+        <h1 style="font-size: 60px;">World Of Apple <img class="apple" style="margin: 0 0 18px 0;" src="https://cdn.freebiesupply.com/logos/large/2x/apple-logo-png-transparent.png" alt=""> </h1>
     </div>
     <hr>
 

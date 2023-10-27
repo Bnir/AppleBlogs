@@ -1,5 +1,5 @@
 <?php
-$submit = false;
+$submit=false;
 if (isset($_POST['fname'])) {
     $server = "localhost";
     $username = "id21434822_admin";
@@ -24,7 +24,7 @@ if (isset($_POST['fname'])) {
 
     if ($conn->query($sql) == true) {
         //echo "Submitted Successfully";
-        $submit = true;
+        $submit=true;
     } else {
         echo "ERROR: $sql <br> $conn->error";
     }
@@ -32,43 +32,6 @@ if (isset($_POST['fname'])) {
     $conn->close();
 }
 ?>
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>Contact US</title>-->
-<!--    <link rel="stylesheet" href="style.css">-->
-<!--</head>-->
-
-<!--<body class="contacthead" style="background-color: blanchedalmond; font-weight: bold;">-->
-<!--    <div class="container2">-->
-<!--        <h1 style="text-align: center; background-color: rgb(154, 164, 228);"><u>Contact US</u></h1>-->
-<!--        <center>-->
-<!--            <form class="contact" action="" method="POST">-->
-<!-- <label for="name">Your Name</label> -->
-<!--                <input type="text" name="name" id="name" placeholder="Name" required>-->
-<!-- <label for="email">Email ID</label> -->
-<!--                <input type="email" name="email" id="email" placeholder="Email ID">-->
-<!--                <br>-->
-
-<!-- <label for="subject">Subject:</label> -->
-<!--                <input type="text" name="sub" id="subject" placeholder="Subject">-->
-<!--                <br>-->
-
-<!-- <label for="desp">Description</label> -->
-<!--                <textarea name="desc" id="desp" cols="30" rows="10" placeholder="Description"></textarea>-->
-
-<!--                <button type="submit">SUBMIT</button>-->
-<!--            </form>-->
-<!--        </center>-->
-<!--    </div>-->
-<!--</body>-->
-
-<!--</html>-->
-
 
 <!DOCTYPE html>
 <html lang="en">
