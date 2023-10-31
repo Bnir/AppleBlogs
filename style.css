@@ -286,6 +286,58 @@ textarea {
 
 /* Iphone 15 Ultra */
 
+
+.bg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.video-container video{
+    width: 100%;
+}
+
+.bg-container .content-container{
+    position: relative;
+    text-align: center;
+    scale: 1.2;
+}
+.bg-container .content-container h1{
+    position: relative;
+    font-size: 100px;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+}
+
+.bg-container .content-container button{
+    padding: 16px 26px;    
+    font-size: large;
+    border-radius: 12px;
+    background-color: rgb(226, 228, 151);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bg-container .content-container button:hover{
+    background-color: rgb(255, 255, 32);
+    border-radius: 16px;
+}
+
+/* 
+
 .vid-container {
     width: 100%;
     height: 100vh;
@@ -336,7 +388,7 @@ textarea {
 .vid-container .content button:hover{
     background-color: rgb(160, 158, 31);
     color: white;
-}
+} */
 
 .chip-img{
     text-align: center;
@@ -412,4 +464,60 @@ textarea {
     .carousel-container{
         scale: 0.8;
     }
+}
+
+/* Iphone 15 Pro */
+
+.bg-container{
+    margin-bottom: 240px;
+}
+
+.abt-battery{
+    padding: 0px 100px;
+}
+
+.abt-battery h1{
+    font-size: 110px;
+}
+
+.abt-battery .i-15-container{
+    text-align: center;
+}
+
+.titanium{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.titanium h1{
+    font-size:80px;
+    line-height: 0.5;
+}
+
+.titanium .titanium-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    margin-left: 100px;
+    gap: 10px;
+}
+
+.titanium .titanium-container video{
+    width: 70%;
+}
+
+.titanium .titanium-container .row-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.row-container img{
+    width: 35%;
 }
